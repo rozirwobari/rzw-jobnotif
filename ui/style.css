@@ -1,0 +1,39 @@
+body {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.notification {
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.notification-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.notification-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .notification-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .notification-number {
+        padding: 2px 5px;
+        font-size: 10px;
+    }
+}
